@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="page-top" class="page-top"> 
+        <img class="thumbnail-image" src="assets/photo.jpg" style="width: 60px; height: 60px">
+        <span class = "name-text">
+            SHEHRIAR BURNEY
+        </span>
+        <a>
+            <a href = "https://www.linkedin.com/in/shehriar-burney-765185243/">
+                <img class = "logo-link-image" src="assets/linkedinLogo.png">
+            </a>
+            <a href = "https://github.com/shehriar">
+                <img class = "logo-link-image" src="assets/gitLogo.png">
+            </a>
+        </a>
+    </div>
+    
+    <hr width = 1300px>
+
+    <div class = "btn-group page-top">
+        <button (click)="clickButton('home')"> Home </button>
+        <div class = "vl"></div>
+        <button (click)="clickButton('projects')"> Projects </button>
+        <div class = "vl"></div>
+        <button (click)="clickButton('education')"> Education </button>
+        <div class = "vl"></div>
+        <button (click)="clickButton('contact')"> Contact Me! </button>
+    </div>
+
+    <hr width = 1300px>
+
+</body>
+
+</html>
+
+<main id = "content">
+    <router-outlet></router-outlet>
+</main>

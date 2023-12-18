@@ -1,0 +1,75 @@
+.thumbnail-image       { 
+    width: 60px;
+    height: 60px; 
+    clip-path: circle(30px at center); 
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.between-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-link-image{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    vertical-align: top;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    clip-path: circle(15px at center); 
+}
+
+.page-top {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.center{
+    text-align: center;
+}
+
+.name-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-group button {
+    background-color: rgba(237, 237, 237, 0.474); /* Green background */
+    border: 1px solid rgb(131, 131, 131); /* Green border */
+    border-radius: 10px;
+    color: black; /* White text */
+    padding: 10px 130px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline 0.15em rgba(56, 155, 83, 0);
+    transition: text-decoration-color 300ms;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #d8d8d8;
+    text-decoration-color: rgba(56, 155, 83, 1);
+}
+
+.vl {
+    border-left: 1px solid grey;
+    height: 30px;
+}
