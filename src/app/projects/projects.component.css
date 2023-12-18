@@ -12,9 +12,36 @@
 
 .project-box:hover {
     background-color: rgb(236, 212, 252);
+    width: 320px;
+    height: 170px;
 }
 
 .pds-box {
     background-image: url("assets/PDS.png");
     background-size: 100% 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.left-column {
+    overflow: auto;
+    height: 80vh;
+    background-color: rgb(228, 228, 228);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.right-column {
+    overflow: auto;
+    padding: 20px;
+    background-color: grey;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

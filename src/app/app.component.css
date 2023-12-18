@@ -67,6 +67,7 @@
 .btn-group button:hover {
     background-color: #d8d8d8;
     text-decoration-color: rgba(56, 155, 83, 1);
+    border: 2px solid rgb(131, 131, 131);
 }
 
 .vl {

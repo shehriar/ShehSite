@@ -3,7 +3,18 @@
 
 <body>
     <div style="padding-top: 20px;"></div>
-    <div class = "pds-box project-box"> 
+    <div class = "container">
+        <div class = "left-column">
+            <div class = "grid-container">
+                <div class="grid-item pds-box project-box" *ngFor="let project of projects" (click)="selectProject(project)"></div>
+            </div>
+        </div>
+        <div class = "right-column">
+            <div *ngIf="selectedProject">
+                <h2>{{selectedProject.name}}</h2>
+                <p>{{selectedProject.description}}</p>
+            </div>
+        </div>
     </div>
 </body>
 

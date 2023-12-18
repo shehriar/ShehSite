@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 
 export class ProjectsComponent {
   title = 'Projects';
+
+  projects = [
+    { name: 'PDS', description: "Application to help people locate potholes"},
+    { name: 'SDP', description: "Application to help people locate potholes"}
+  ]
+  selectedProject: { name: string; description: string } | null = null;
+  selectProject(project: any) {
+    this.selectedProject = project;
+  }
 }
